@@ -399,6 +399,9 @@ logging-format-style=old
 # function parameter format.
 logging-modules=logging
 
+# Disable warnings for fstrings (PS: not insisting on this, just a proposal)
+disable=logging-fstring-interpolation
+
 
 [MESSAGES CONTROL]
 
