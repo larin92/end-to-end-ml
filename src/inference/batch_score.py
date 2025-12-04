@@ -352,11 +352,11 @@ def main(
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
     # Set default paths
-    if config_path is None:
+    if not config_path:
         config_path = PARENT_DIR / "config" / "training-config.yml"
-    if inference_data_path is None:
+    if not inference_data_path:
         inference_data_path = DATA_DIR / "inference.parquet"
-    if output_path is None:
+    if not output_path:
         output_path = DATA_DIR / f"predictions_{timestamp}.parquet"
 
     # Load config to get target column name and model path
